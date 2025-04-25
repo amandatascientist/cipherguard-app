@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encrypt/Decrypt App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Encrypt / Decrypt App</h1>
+
+    <textarea id="inputText" placeholder="Enter your text..."></textarea>
+
+    <input type="number" id="shiftValue" placeholder="Enter shift value (e.g. 3)">
+    <input type="password" id="encryptionPassword" placeholder="Enter encryption key/password">
+
+    <div class="buttons">
+        <button onclick="encryptText()">Encrypt</button>
+        <button onclick="decryptText()">Decrypt</button>
+        <button onclick="clearFields()">Clear</button>
+    </div>
+
+    <h2>Output:</h2>
+    <textarea id="outputText" readonly></textarea>
+
+    <div class="buttons">
+        <button onclick="copyOutput()">Copy Output</button>
+        <button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button>
+    </div>
+
+    <p id="message"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
